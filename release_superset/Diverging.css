@@ -1,0 +1,73 @@
+.gen_a{
+    width: 100%;
+}
+
+.dot_men {
+ height: 15px;
+ width: 15px;
+ background-color: rgb(102,194,165);
+ border-radius: 50%;
+ display: inline-block;
+}
+
+.dot_women {
+ height: 15px;
+ width: 15px;
+ background-color: rgb(252,141,98);
+ border-radius: 50%;
+ display: inline-block;
+}
+
+.range_w {
+   height: 5%;
+   width: 100%;    
+}
+.titdvg{
+    width: 20%;    
+}
+.dvggen{
+    width: 78%;
+    border-color: red;
+    border-style: blue;
+}
+.dib{
+   display: inline-block;
+}
+
+.fl{
+float:left;
+}
+.fr{
+float:right;
+}
+
+
+.genderAColor{
+   background-color:  rgb(102,194,165);
+}
+.genderBColor{
+   background-color:   rgb(252,141,98);
+}
+.genderA{
+   width: 49%;
+   height:100%;
+}
+.genderB{
+   width: 49%;
+   height:100%;
+}
+.color_w{
+   color:white;   
+}
+
+.fxC{
+   display: block;
+   margin-left: 50%;
+   margin-right: 50%;
+}
+.fxCT{
+   display: block;
+}
+.high_{
+   height: 85%;
+}

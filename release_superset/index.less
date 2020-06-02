@@ -1,0 +1,63 @@
+// Index .less, any imports here will be included in the final css build
+
+@import "~bootstrap/less/bootstrap.less";
+@import "./cosmo/variables.less";
+@import "./cosmo/bootswatch.less";
+
+@stroke-primary:  @brand-primary;
+
+#login {
+    position: absolute;
+    z-index: 9;
+    /*background-color:@brand-primary;*/
+    background-color:#fff;
+    width: 60%;
+    height: 100%;
+    top:0;
+    left: 0;
+    display: flex;
+    margin-left: -10%;
+    text-align: center;
+    border-radius: 10px;
+  }
+  #loginbox {
+    width: 60%;
+    height: 400px;
+    z-index: 999;
+    /*background-color: @brand-primary;*/
+    background-color:#fff;
+    box-shadow: 0 3px 24px 0 rgba(0, 0, 0, 0.13);
+    text-align: center;
+    margin-top: 120px !important;
+  }
+  #loginbox .panel.panel-primary {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: #fff;
+    padding: 5%;
+  }
+  .img_login {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    z-index: 99;
+    top:30%;
+    left: 15%;
+    right: 15%;
+    text-align: center;
+  }
+  
+  input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+  
+  }
+  
+  @media only screen and (min-width : 768px) and (max-width : 1023px) {
+    #loginbox {
+      width: 80%;
+    }
+  }

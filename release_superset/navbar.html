@@ -18,16 +18,18 @@
     </div>	
     <div class="navbar-collapse collapse">	
       <ul class="nav navbar-nav">
-
-        {% if not current_user.is_anonymous %}
-          {% if WARNING_MSG %}	
+        {% if WARNING_MSG %}	
             <li class="alert alert-danger">	
               {{ WARNING_MSG | safe }}	
             </li>	
-          {% endif %}
         {% endif %}
+        {% if  current_user.id %}
+            {% include 'appbuilder/navbar_menu.html' %}
+        {% endif %}
+
         
-        {% include 'appbuilder/navbar_menu.html' %}
+        
+        
       </ul>	
       <ul class="nav navbar-nav navbar-right">	
         {% include 'appbuilder/navbar_right.html' %}	

@@ -70,15 +70,19 @@ def get_filters_by_rol():
     """
 
     filters = { }
-    filters['test_cordoba_1']                 = " centro = 'Hospital Cordoba' "
-    filters['test_cordoba_uti_rol']           = " centro = 'Hospital Cordoba' and servicio = 'UTI' and seccion='UTI' "
-    filters['Gestor clinico de Servicio CBA'] = " ODS_LK_CENTER_PARQUET.DES_CENTER_LONG = 'Hospital Cordoba' and  ODS_LK_SECTION_PARQUEt.DES_SECTION_LONG = 'UTI' and ODS_LK_SERVICE_PARQUET.DES_SERVICE_LONG='UTI' "
+ 
+    filters['Gestor clinico de Servicio CBA']           = " ODS_LK_CENTER_PARQUET.DES_CENTER_LONG = 'Hospital Cordoba' and  ODS_LK_SECTION_PARQUEt.DES_SECTION_LONG = 'UTI' and ODS_LK_SERVICE_PARQUET.DES_SERVICE_LONG='UTI' "
+    filters['Gestor Integral de Unidad Hospitalaria']   = " ODS_LK_CENTER_PARQUET.DES_CENTER_LONG = 'Hospital Cordoba' "
 
-    #filters['GESTOR RED SANITARIA'] = ''
-    #filters['Rol_validador'] = ''
-    #filters['Admin'] = '1 = 1'
-    #filters['Admin copy'] = '1 = 1'
-    
+    """
+        filters['test_cordoba_1']                 = " centro = 'Hospital Cordoba' "
+        filters['test_cordoba_uti_rol']           = " centro = 'Hospital Cordoba' and servicio = 'UTI' and seccion='UTI' "
+        filters['GESTOR RED SANITARIA'] = ''
+        filters['Rol_validador'] = ''
+        filters['Admin'] = '1 = 1'
+        filters['Admin copy'] = '1 = 1'
+    """
+
 
     filters_found = []
     for role in g.user.roles:
